@@ -10,7 +10,7 @@
     <title>{% block title %} {% endblock %}</title>
 </head>
 <body>
-<div class="container">
+<div class="page">
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
     <div class="col-md-3 mb-2 mb-md-0">
         <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
@@ -26,7 +26,21 @@
         <button type="button" class="btn btn-primary">Регистрация</button>
     </div>
 </header>>
-{% block body %} {% endblock %}
+    <div class="content">
+        {% block content %} {% endblock %}
+    </div>
+<footer>
+    <div class="card">
+        <div class="card-header">
+        Featured
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+</footer>
 </div>
 </body>
 </html>
