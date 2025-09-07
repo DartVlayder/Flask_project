@@ -19,6 +19,7 @@
     </div>
     <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
         <li><a href="{{ url_for('index') }}" class="nav-link px-2 link-secondary">Главная</a></li>
+        <li><a href="{{ url_for('posts') }}" class="nav-link px-2 ">Все записи</a></li>
         <li><a href="{{ url_for('about') }}" class="nav-link px-2">О нас</a></li>
         <li><a href="{{ url_for('create') }}" class="nav-link px-2">Добавить запись</a></li>
     </ul>
@@ -31,15 +32,10 @@
         {% block content %} {% endblock %}
     </div>
 <footer>
-    <div class="card">
-        <div class="card-header">
-        Featured
-        </div>
-        <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
+     <div class="col-md-3 mb-2 mb-md-0">
+        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+            <img class="header__img" src="{{ url_for('static', filename='img/i.webp') }}" alt="123">
+        </a>
     </div>
 </footer>
 </div>
